@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+	<TemplateObjectList>
+		<TemplateObject objectName="self" id="0" isTemp="false"/>
+		<TemplateObject objectName="target" id="1" isTemp="false"/>
+		<TemplateObject objectName="bullet" id="2" isTemp="true"/>
+		<TemplateObject objectName="bullet1" id="3" isTemp="true"/>
+		<TemplateObject objectName="bullet2" id="4" isTemp="true"/>
+		<TemplateObject objectName="bullet3" id="5" isTemp="true"/>
+		<TemplateObject objectName="bullet4" id="6" isTemp="true"/>
+		<TemplateObject objectName="bullet5" id="7" isTemp="true"/>
+	</TemplateObjectList>
+	<RefParamList>
+		<Vector3i name="direction" x="0" y="0" z="0" refParamName="" useRefParam="false"/>
+		<Vector3i name="_TargetDir" x="0" y="0" z="0" refParamName="" useRefParam="false"/>
+		<Vector3i name="_TargetPos" x="0" y="0" z="0" refParamName="" useRefParam="false"/>
+	</RefParamList>
+	<Action tag="" length="0.066" loop="false">
+	    <Track trackName="HitTriggerTick1" eventType="HitTriggerTick" guid="e5c92a97-c4cd-4f3f-b4a8-c5703606a08c" enabled="true" lod="0" useRefParam="false" refParamName="" r="0.867" g="0.000" b="1.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+			<Event eventName="HitTriggerTick" time="0.000" isDuration="false">
+				<TemplateObject name="targetId" objectName="self" id="0" isTemp="false" refParamName="" useRefParam="false"/>
+				<TemplateObject name="triggerId" objectName="target" id="1" isTemp="false" refParamName="" useRefParam="false"/>
+				<bool name="bulletHit" value="false" refParamName="" useRefParam="false"/>
+				<TemplateObject name="victimId" objectName="None" id="-1" isTemp="false" refParamName="" useRefParam="false"/>
+				<bool name="lastHit" value="false" refParamName="" useRefParam="false"/>
+				<bool name="bSkillCombineChoose" value="false" refParamName="" useRefParam="false"/>
+				<int name="SelfSkillCombineID_1" value="564201" refParamName="" useRefParam="false"/>
+				<int name="SelfSkillCombineID_2" value="0" refParamName="" useRefParam="false"/>
+				<int name="SelfSkillCombineID_3" value="0" refParamName="" useRefParam="false"/>
+				<int name="TargetSkillCombine_1" value="0" refParamName="" useRefParam="false"/>
+				<int name="TargetSkillCombine_2" value="0" refParamName="" useRefParam="false"/>
+				<int name="TargetSkillCombine_3" value="0" refParamName="" useRefParam="false"/>
+				<bool name="bCheckSight" value="false" refParamName="" useRefParam="false"/>
+			</Event>
+		</Track>
+		<Track trackName="SkillCDTriggerTick0" eventType="SkillCDTriggerTick" guid="aae6aa58-4011-4902-b41a-5a8d0083b517" enabled="true" refParamName="" useRefParam="false" r="0.000" g="1.000" b="0.400" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+			<Event eventName="SkillCDTriggerTick" time="0.000" isDuration="false">
+				<TemplateObject name="targetId" objectName="self" id="0" isTemp="false" refParamName="" useRefParam="false"/>
+				<bool name="useSlotType" value="false" refParamName="" useRefParam="false"/>
+				<Enum name="slotType" value="0" refParamName="" useRefParam="false">
+					<uint name="普通"/>
+					<uint name="技能1"/>
+					<uint name="技能2"/>
+					<uint name="技能3"/>
+					<uint name="技能4"/>
+				</Enum>
+				<bool name="forbidTriggerRepeatedly" value="false" refParamName="" useRefParam="false"/>
+				<int name="overrideCDValue" value="0" refParamName="" useRefParam="false"/>
+				<int name="triggerRatio" value="0" refParamName="" useRefParam="false"/>
+			</Event>
+		</Track>
+	</Action>
+</Project>
+

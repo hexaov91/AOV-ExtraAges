@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+	<TemplateObjectList>
+		<TemplateObject objectName="self" id="0" isTemp="false"/>
+		<TemplateObject objectName="target" id="1" isTemp="false"/>
+	</TemplateObjectList>
+	<RefParamList>
+		<Vector3i name="_BulletDir" x="0" y="0" z="0" refParamName="" useRefParam="false"/>
+		<Vector3i name="_TargetDir" x="0" y="0" z="0" refParamName="" useRefParam="false"/>
+		<Vector3i name="_TargetPos" x="0" y="0" z="0" refParamName="" useRefParam="false"/>
+	</RefParamList>
+	<Action tag="" length="0.100" loop="false">
+		<Track trackName="SkillFuncInstant0" eventType="SkillFuncInstant" guid="8d09eb2f-50ed-4358-a741-27ca7e1a94dd" enabled="true" refParamName="" useRefParam="false" r="1.000" g="0.000" b="0.667" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+			<Event eventName="SkillFuncInstant" time="0.000" isDuration="false">
+				<Enum name="SkillFuncType" value="0" refParamName="" useRefParam="false">
+					<uint name="物理伤害"/>
+					<uint name="法术伤害"/>
+					<uint name="真实伤害"/>
+					<uint name="回复生命值"/>
+					<uint name="增加攻击速度"/>
+					<uint name="减少攻击速度"/>
+					<uint name="增加移动速度"/>
+					<uint name="减少移动速度"/>
+					<uint name="提高攻击力"/>
+					<uint name="降低攻击力"/>
+					<uint name="吸血"/>
+				</Enum>
+			</Event>
+		</Track>
+	</Action>
+</Project>
+
