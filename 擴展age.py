@@ -118,7 +118,7 @@ def editAB(editlist,hashedList) :
    for hashAdd in editlist:
  #   print(hashedList[i])
     raw=raw.replace(hashedList[i].to_bytes(4, 'little',signed=True) , hashAdd.to_bytes(4, 'little',signed=True) )
-    print(hashedList[i],hashedList[i].to_bytes(4, 'little',signed=True),"tooo",hashAdd , hashAdd.to_bytes(4, 'little',signed=True))
+    print(hashedList[i],hashedList[i].to_bytes(4, 'little',signed=True),"to",hashAdd , hashAdd.to_bytes(4, 'little',signed=True))
     i=i+1
     
     
