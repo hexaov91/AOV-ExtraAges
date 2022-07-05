@@ -1,6 +1,6 @@
 # AOV--Ages-
 
-利用並覆蓋AsianGame的文件校驗HashedCode
+利用並覆蓋AsianGame的文件校驗HashedCode,實現自訂義添加ages
 
 
 add為預添加的Ages
